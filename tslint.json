@@ -10,7 +10,6 @@
     "deprecation": {
       "severity": "warn"
     },
-    "forin": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -33,7 +32,6 @@
     "no-console": [
       true,
       "debug",
-      "info",
       "time",
       "timeEnd",
       "trace"
@@ -70,13 +68,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "abc",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "abc",
       "kebab-case"
     ],
     "no-output-on-prefix": true,
@@ -89,13 +87,17 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-
     "nx-enforce-module-boundaries": [
       true,
       {
         "allow": [],
         "depConstraints": [
-          { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+          {
+            "sourceTag": "*",
+            "onlyDependOnLibsWithTags": [
+              "*"
+            ]
+          }
         ]
       }
     ]
